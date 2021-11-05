@@ -6,7 +6,8 @@ print("Зашифровано: ")
 
 
 
-txt1 = txt1.replace("б","а")
+
+txt1 = txt1.replace("б","a")
 txt1 = txt1.replace("в","б")
 txt1 = txt1.replace("г","в")
 txt1 = txt1.replace("д","г")
