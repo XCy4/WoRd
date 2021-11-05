@@ -1,13 +1,14 @@
 
 print("Исходник: ")
-txt1 = 'а муха тоже вертолет'
-
+txt1 = 'зачем? по рофлу.'
+print(txt1)
 print("Зашифровано: ")
 
 
 txt1 = txt1.replace("я","а")
 txt1 = txt1.replace("б","а")
 txt1 = txt1.replace("в","б")
+txt1 = txt1.replace("я","а")
 txt1 = txt1.replace("г","в")
 txt1 = txt1.replace("д","г")
 txt1 = txt1.replace("е","д")
