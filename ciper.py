@@ -4,11 +4,10 @@ txt1 = 'зачем? по рофлу.'
 print(txt1)
 print("Зашифровано: ")
 
-
+txt1 = txt1.replace("а","я")
 txt1 = txt1.replace("я","а")
 txt1 = txt1.replace("б","а")
 txt1 = txt1.replace("в","б")
-txt1 = txt1.replace("я","а")
 txt1 = txt1.replace("г","в")
 txt1 = txt1.replace("д","г")
 txt1 = txt1.replace("е","д")
@@ -38,7 +37,7 @@ txt1 = txt1.replace("ы","ъ")
 txt1 = txt1.replace("ь","ы")
 txt1 = txt1.replace("э","ь")
 txt1 = txt1.replace("ю","э")
-txt1 = txt1.replace("а","я")
+
 
 print(txt1)
 
