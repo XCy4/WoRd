@@ -40,7 +40,6 @@ txt1 = txt1.replace("ю","э")
 txt1 = txt1.replace("а","я")
 
 print(txt1)
-print
 
 
 
