@@ -1,38 +1,21 @@
-txt = 'а я не блондинка я, а ты?'
-print(txt)
+st = 'АаЯ яЕеЁё'
 
-txt = txt.replace("б","a")
-txt = txt.replace("в","б")
-txt = txt.replace("г","в")
-txt = txt.replace("д","г")
-txt = txt.replace("е","д")
-txt = txt.replace("ё","е")
-txt = txt.replace("ж","ё")
-txt = txt.replace("з","ж")
-txt = txt.replace("и","з")
-txt = txt.replace("й","и")
-txt = txt.replace("к","й")
-txt = txt.replace("л","к")
-txt = txt.replace("м","л")
-txt = txt.replace("н","м")
-txt = txt.replace("о","н")
-txt = txt.replace("п","о")
-txt = txt.replace("р","п")
-txt = txt.replace("с","р")
-txt = txt.replace("т","с")
-txt = txt.replace("у","т")
-txt = txt.replace("ф","у")
-txt = txt.replace("х","ф")
-txt = txt.replace("ц","х")
-txt = txt.replace("ч","ц")
-txt = txt.replace("ш","ч")
-txt = txt.replace("щ","ш")
-txt = txt.replace("ъ","щ")
-txt = txt.replace("ы","ъ")
-txt = txt.replace("ь","ы")
-txt = txt.replace("э","ь")
-txt = txt.replace("ю","э")
-txt = txt.replace("я","ю")
-txt = txt.replace("а","я")
+a = ord('а')
+alf = list(''.join([chr(i) for i in range(a,a+6)] + [chr(a+33)] + [chr(i) for i in range(a+6,a+33)]))
+ind = range(1,len(alf))
+arr = dict(zip(alf,ind))
 
-print(txt)
+result = ''
+for s in list(st.lower()):
+	res = ''
+	if s not in alf:
+		res = ' '
+	elif s == 'а':
+		res = 'я'
+	else:
+		res = alf[arr[s]-2]
+	
+	result = result + res
+
+print(st)
+print(result)
